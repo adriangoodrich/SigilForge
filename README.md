@@ -3,6 +3,12 @@
 **Forge your own arcane power with custom sigils**  
 *An interactive magical circle generator inspired by anime, RPGs, and esoteric symbolism.*
 
+![Vista previa 1](SF_image1.png)
+*Ejemplo de círculo generado con SigilForge*
+
+![Vista previa 2](SF_image2.png)
+*Otro diseño con diferentes parámetros*
+
 ---
 
 ## 📜 Overview
