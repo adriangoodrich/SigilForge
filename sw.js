@@ -2,7 +2,7 @@
    SigilForge Service Worker  –  Cache-first strategy
    ═══════════════════════════════════════════════════ */
 
-const APP_VERSION = '1.0';
+const APP_VERSION = '1.1';
 const CACHE_NAME  = `sigilforge-v${APP_VERSION}`;
 
 // Archivos que se pre-cachean al instalar
@@ -11,8 +11,7 @@ const PRECACHE = [
   './index.html',
   './manifest.json',
   './icons/icon-192.png',
-  './icons/icon-512.png',
-  'https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Share+Tech+Mono&family=MedievalSharp&family=UnifrakturMaguntia&family=Pirata+One&family=Almendra&display=swap'
+  './icons/icon-512.png'
 ];
 
 // ── INSTALL: pre-cachear recursos ─────────────────────
