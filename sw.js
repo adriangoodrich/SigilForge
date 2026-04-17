@@ -55,12 +55,16 @@ self.addEventListener('fetch', event => {
           return response;
         }
         const toCache = response.clone();
-        caches.open(CACHE_NAME).then(cache => cache.put(event.request, toCache));
+        caches.open(CACHE_NAME).then(cache => cache.put(event.request, toCache).catch(() => {}));
         return response;
-      }).catch(() => {
+      }).catch(err => {
+        console.warn('[SW] Fetch error:', err);
         if (event.request.mode === 'navigate') {
-          return caches.match('./index.html');
+          return caches.match('./index.html').catch(() => {
+            return new Response('Offline - no cached content', {status: 503});
+          });
         }
+        return new Response('Offline', {status: 503});
       });
     })
   );
