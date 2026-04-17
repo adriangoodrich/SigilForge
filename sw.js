@@ -2,7 +2,7 @@
    SigilForge Service Worker  –  Cache-first strategy
    ═══════════════════════════════════════════════════ */
 
-const APP_VERSION = '1.3';
+const APP_VERSION = '1.4';
 const CACHE_NAME  = `sigilforge-v${APP_VERSION}`;
 
 // Archivos que se pre-cachean al instalar
