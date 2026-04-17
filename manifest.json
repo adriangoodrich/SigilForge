@@ -1,0 +1,26 @@
+{
+  "name": "SigilForge – Arcane Circle Generator",
+  "short_name": "SigilForge",
+  "description": "Generador interactivo de círculos mágicos y sigilos procedurales.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "theme_color": "#0f3460",
+  "background_color": "#1a1a2e",
+  "categories": ["art", "entertainment", "games"],
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
